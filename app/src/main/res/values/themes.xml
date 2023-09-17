@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CredUI" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#3A479B</item>
+        <item name="colorSurface">#282A3D</item>
+    </style>
+
+    <style name="Theme.CredUI" parent="Base.Theme.CredUI" />
+
+    <style name="PrimaryFont" parent="Theme.CredUI">
+        <item name="android:textSize">20sp</item>
+        <item name="fontWeight">600</item>
+    </style>
+
+    <style name="SecondaryFont" parent="Theme.CredUI">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#B69C9EA4</item>
+    </style>
+
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="CustomSeekBarStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="android:thumb">@drawable/seekbar_green_circle</item>
+    </style>
+
+
+</resources>

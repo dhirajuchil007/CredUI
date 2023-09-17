@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_background_white">
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/imgMoneyBag"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toTopOf="@id/txtCreditAmountLabel"
+        android:layout_width="100dp"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/txtCreditAmountLabel"
+        style="@style/SecondaryFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="credit amount"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/txtCreditAmountValue" />
+
+    <TextView
+        android:id="@+id/txtCreditAmountValue"
+        style="@style/PrimaryFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$1000000"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/centerView" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/CustomSeekBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centerView" />
+
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

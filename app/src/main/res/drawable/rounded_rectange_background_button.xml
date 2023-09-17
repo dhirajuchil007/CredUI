@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?attr/colorPrimary" /> <!-- Background color (change to your desired color) -->
+    <corners android:radius="@dimen/default_margin"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        /> <!-- Radius for rounded corners (adjust as needed) -->
+</shape>
